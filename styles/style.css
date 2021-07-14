@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* google-font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+/* universal-desgine */
+p{
+    font-size: 18px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.fas{
+    margin-left: 5px;
+}
+article,.workers-info,.contact-us-area{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 30px;
+    row-gap: 27px;
+}
+.player-info,.senior-team-leader,.contact-us-via,.footer-div{
+    width: 330px;
+    height: 470px;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.fab{
+    font-size: 35px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+h3{
+    font-size:22px ;
+}
+span{
+    font-size: 20px;
+}
+.footer-banner,.contact-us-section,.footer,.our-team-section,.player-identity{
+    margin-top: 50px;
+}
+.our-team-heading h1,.contact-us-heading h1{
+    text-align: center;
+    font-size: 50px;
+
+}
+
+
+
+/* Head-banner-styling */
+.head-banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    background-color:darkblue;
+}
+ .heading{
+    width: 487px;
+    height: 320px;
+} 
+.heading h1{
+    font-size: 64px;
+    line-height: 80px;
+    color: white;
+}
+.top-banner-image:hover img{
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.live{
+    height: 44px;
+    width: 168px;
+    background-color:#E02C6D;
+    color: white;
+    padding: 10px 40px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.live:hover{
+    transform: translate(120px);
+}
+.live a{
+    text-decoration: none;
+    color: white;
+
+}
+.head-banner img{
+    width: 556px;
+    height: 438px;
+
+}
+/* main - section - desgine */
+
+main{
+    display: flex;
+    justify-content: center;
+}
+/* img-desgine */
+.player-photo img,.team-member-image img{
+    width:300px;
+    height: 256px;
+}
+/* footer-banner */
+.footer-taking-div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.footertext{
+    width:465px;
+    height: 325px;
+}
+.footertext h1{
+    color: black;
+    font-size:50px;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-image img{
+    width: 460px;
+    height: 320px;
+}
+
+/* contact-us-area */
+.contact-us-via{
+height: 150px;
+width: 220px;
+justify-content: flex-start;
+align-items: center;
+}
+/* footer-desgine */
+.footer-logo img{
+    width: 483px;
+    height: 110px;
+}
+.footer-div{
+    width: 483px;
+    height: 213px;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    box-shadow: none;
+
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Creating-responsive -desgine  */
+/* 
+for-mobile
+ */
+ @media only screen and (max-width:688px) {
+    .container,.player-identity,.our-team-section,.contact-us-section,.footer{
+    width:100%;
+    } 
+    body,html{
+        overflow-x: hidden;
+    }
+    .head-banner
+    {
+         width: 100%;
+         height: 695px;
+         grid-template-columns: repeat(1,1fr);
+
+     }
+     .heading{
+         width: 100%;
+        }
+     .heading h1{
+            width: 278px;
+            height: 138px;
+            font-size: 36px;
+            line-height: 50px;
+     }
+    
+    .top-banner-image img{
+      width: 329px;
+      height: 258px;
+  }
+  main{
+      width: 100%;
+      align-items: center;
+  }
+  article{
+      grid-template-columns: repeat(1,1fr);
+  }
+  .player-info,.senior-team-leader,.contact-us-via,.footer-div{
+      margin:auto;
+  }
+  /* footer--banner */
+  .footer-banner{
+      width: 100%;
+  }
+  .footer-taking-div{
+      grid-template-columns: repeat(1,1fr);
+  }
+  .footertext{
+      width: 329px;
+      height: 299px;
+      margin: auto;
+  }
+  .footer-image{
+    margin: auto;
+    margin-top:20px ;
+
+
+  }
+  .footer-image img{
+      width: 328px;
+      height: 248px;
+      margin-top: 40px;
+  }
+  /* our-team-section */
+  .workers-info{
+      grid-template-columns: repeat(1,1fr);
+  }
+ /* contact-us-section */
+ .contact-us-area{
+     grid-template-columns: repeat(1,1fr);
+ }
+ /* footer--section */
+.footer-logo img{
+    width: 270px;
+    height: 80px;
+}
+}
